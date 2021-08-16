@@ -1,0 +1,17 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: financier-app
+  datasource:
+    url:  jdbc:postgresql://localhost:5432/financier
+    username: juniper
+    password: 112233
+
+
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQL92Dialect
+    hibernate:
+      ddl-auto: update
